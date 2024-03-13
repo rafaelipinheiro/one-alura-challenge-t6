@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: 'Inter', sans-serif;
+
+    --primary-background-color: #F3F5FC;
+    --primary-color: #0A3871;
+    --primary-color-hover: #1f68c7;
+    --primary-font-color: #0A3871; 
+
+    --secondary-background-color: #D8DFE8;
+    --secondary-color: #D8DFE8;
+    --secondary-color-hover: #90bffd;
+    --secondary-font-color: #D8DFE8;
+
+    --default-color: #495057;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    margin: 20px;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    padding: 0% 0% 0% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    color: var(--primary-color);
+    font-weight: 300;
+    padding: 20px;
+}
+
+button {
+    min-width: 250px;
+    padding: 12px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 1%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--main-font-family);
+}
+
+textarea {
+    font-family: var(--main-font-family);
+}
+
+.section-main {
+    display: flex;
+    width: 60%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-result {
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+    border-radius: 32px;
+    background-color: var(--primary-background-color);
+    word-wrap: break-word;
+}
+
+#main-text {
+    display: flex;
+    justify-content: baseline;
+    background-color: var(--primary-background-color);
+    width: 100%;
+    color: var(--primary-color);    
+    font-size: 2rem;
+    font-weight: 400;
+    flex-wrap: wrap;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+#main-text::placeholder {    
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.alert-text {
+    margin-top: auto;
+    align-self: flex-start;    
+    font-size: 0.75rem;
+    line-height: 18px;
+    opacity: 80%;
+}
+
+.alert-text img {
+    margin-right: 5px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-font-color);   
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-color-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-font-color);  
+}
+
+.btn-secondary:hover{
+    background-color: var(--secondary-color-hover);
+}
+
+.result-text {
+    color: var(--default-color);
+    background-color: var(--primary-background-color);
+    text-align: justify;
+    align-self: flex-start;
+    margin-bottom: auto;
+    overflow-y: auto;
+    padding: 5% 10% 0% 10%;
+    width: 400px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 36px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    outline: none;
+    resize: none;
+    border: none;    
+}
+
+.container-title {
+    text-align: center;    
+    color: var(--default-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 28.8px;
+    width: 74%;
+}
+
+.container-message {
+    text-align: center;
+    color: var(--default-color);    
+    font-weight: 400;
+    font-size: 1rem;
+    width: 60%;
+    line-height: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-text-error {
+    opacity: 100%;
+    color: red;
+    font-weight: bold;
+}
+
+.icon {
+    width: 36px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    margin-top: -3px;
+}
+
+.icons {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-alert {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.author{
+    min-width: 250px;
+}

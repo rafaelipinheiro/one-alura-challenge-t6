@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Challenge ONE</title>
+    <link rel="icon" href="./images/icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.svg" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section class="section-main">
+            <textarea id="main-text" cols="41" rows="10" placeholder="Digite seu texto"></textarea>
+            
+            <div class="container-alert">
+                <img src="./images/alert.svg" alt="Ícone de alerta">
+                <p id="alert-text" class="alert-text">Apenas letras minúsculas e sem acento</p>
+            </div>
+
+            <div class="buttons">
+                <button id="btn-encrypt" class="btn-primary" onclick="encrypt()">Criptografar</button>
+                <button id="btn-decrypt" class="btn-secondary" onclick="decrypt()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="section-result">
+            <textarea class="result-text hidden"></textarea>
+            <img class="section-result-img" src="./images/project.svg" alt="Imagem do projeto">
+            <h1 id="result-title" class="container-title">Nenhuma mensagem encontrada</h1>
+            <p id="result-message" class="container-message">Digite um texto ao lado para criptografar ou descriptografar.</p>
+            <button id="btn-copy" class="btn-secondary hidden" onclick="copy()">Copiar</button>
+            <p id="message-success-copy" class="hidden">Texto copiado para área de transferência.</p>
+            <p id="message-error-copy" class="hidden">Erro ao copiar texto para área de transferência:</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="buttons space">
+            <div class="buttons">
+                <div class="icons">
+                    <img class="icon" src="./images/alura.png" alt="Ícone Alura" title="Theme Alura" onclick="theme('alura')">
+                    <img class="icon" src="./images/one.png" alt="Ícone ONE" title="Theme ONE" onclick="theme('one')">
+                </div>
+                <div class="icons">
+                    <img class="icon" src="./images/pt-br.png" alt="Ícone idioma português" title="Português" onclick="language('pt-br')">
+                    <img class="icon" src="./images/en-us.png" alt="Ícone idioma inglês" title="English" onclick="language('en-us')">                
+                </div>
+            </div>
+            <div class="author">
+                <h6>Rafaeli Pinheiro</h6>
+                <h6>Challenge ONE - T6</h6>
+            </div>            
+        </div>       
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
